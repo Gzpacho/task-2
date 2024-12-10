@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOTYBET.KE Registration</title>
+</head>
+<body>
+    <h1>FOOTYBET.KE Registration Form</h1>
+    <form action="bet1.php" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="firstname" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="lname">Surname:</label>
+            <input type="text" id="lname" name="surname" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="idno">ID Number:</label>
+            <input type="text" id="idno" name="idno" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="league">League:</label>
+            <select id="league" name="league" required>
+                <option value="English Premier League">Premier League</option>
+                <option value="La Liga">La Liga</option>
+                <option value="Serie A">Serie A</option>
+                <option value="Bundesliga">Bundesliga</option>
+                <option value="Ligue 1">Ligue 1</option>
+                <option value="MLS">Major League Soccer (MLS)</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <label>Favourite Teams to Follow:</label><br>
+            <input type="checkbox" name="teams[]" value="Manchester United"> Manchester United<br>
+            <input type="checkbox" name="teams[]" value="Barcelona"> Barcelona<br>
+            <input type="checkbox" name="teams[]" value="Real Madrid"> Real Madrid<br>
+            <input type="checkbox" name="teams[]" value="Bayern Munich"> Bayern Munich<br>
+            <input type="checkbox" name="teams[]" value="Paris Saint-Germain"> Paris Saint-Germain<br>
+            <input type="checkbox" name="teams[]" value="LA Galaxy"> LA Galaxy<br>
+        </div>
+        <br>
+
+        <div>
+            <label>Gender:</label>
+            <label for="male">Male:</label>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="female">Female:</label>
+            <input type="radio" id="female" name="gender" value="Female">
+        </div>
+        <br>
+
+        <div>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="e.g. 0712345678" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="photo">Upload Photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+        </div>
+        <br>
+
+        <div>
+            <input type="reset" value="Clear Form">
+        </div>
+        <br>
+
+        <div>
+            <input type="submit" value="Register">
+        </div>
+    </form>
+</body>
+</html>
